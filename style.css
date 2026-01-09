@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --color-white: #ffffff;
+  --color-black: #232323;
+}
+.hero__section {
+  background-image: url("assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 53.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.hero__title {
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 700;
+  font-size: 6.25rem;
+  text-align: center;
+  color: var(--color-white);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--color-black);
+  text-transform: uppercase;
+}
+.button {
+  position: relative;
+  cursor: pointer;
+  width: 18.75rem;
+}
+.button__text {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 700;
+  color: var(--color-black);
+  font-size: 2.75rem;
+  fill: var(--color-white);
+  width: 80%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.about__title {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--color-black);
+  color: var(--color-white);
+  font-family: "Pixelify Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about__texte {
+  color: var(--color-black);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  max-width: 40.625rem;
+}
+
+.what__is {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  padding: 4rem 10rem 2rem;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+.what__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.sleeping__animation {
+  width: 13.625rem;
+  height: 13.625rem;
+}
+.walking__animation {
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+.walking__animation {
+  width: 12.5rem;
+  height: 12.5rem;
+  position: relative;
+  will-change: transform;
+  animation: walk-right 8s linear infinite;
+}
+.updates {
+  position: relative;
+  display: flex;
+  gap: 2.5rem;
+}
+.update__img {
+  width: 17rem;
+  height: 7.5rem;
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+}
+
+.update {
+  position: relative;
+  width: 19.375rem;
+  height: 15rem;
+}
+.update__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: -1rem;
+  left: 0.75rem;
+}
+
+body {
+  position: relative;
+  cursor: url("assets/Hand_opened.png") 16 16, auto;
+}
+
+.button,
+.button__text,
+a,
+a.button__text {
+  cursor: url("assets/hand_closed.png") 16 16, pointer;
+}
+.update__text h4 {
+  color: var(--color-white);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-black);
+  font-family: "Pixelify Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.update__text p {
+  width: 17.1875rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+}
+a {
+  text-decoration: none;
+}
+@keyframes walk-right {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(calc(100vw + 50%));
+  }
+}
+
+.footer__logo {
+  color: var(--color-white);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-black);
+  font-family: "Pixelify Sans";
+  font-size: 2.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  padding: 0 10rem;
+}
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.navigation__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  font-family: "Pixelify Sans";
+}
+
+/*reset css*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
