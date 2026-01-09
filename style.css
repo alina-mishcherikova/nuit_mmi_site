@@ -111,7 +111,7 @@
   gap: 2.5rem;
 }
 .update__img {
-  width: 17rem;
+  width: 19rem;
   height: 12rem;
   position: absolute;
   top: 0.75rem;
@@ -122,14 +122,14 @@
 .update {
   position: relative;
   width: 19.375rem;
-  height: 22rem;
+  height: 23.75rem;
 }
 .update__text {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   position: absolute;
-  bottom: 0.75rem;
+  top: 60%;
   left: 0.75rem;
   right: 0.75rem;
 }
@@ -167,6 +167,13 @@ a.button__text {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #b85656;
+  text-decoration: solid underline;
+}
+a:active {
+  color: #601313;
+}
 @keyframes walk-right {
   0% {
     transform: translateX(-120%);
@@ -174,6 +181,12 @@ a {
   100% {
     transform: translateX(calc(100vw + 50%));
   }
+}
+.button__text:hover {
+  color: #b85656;
+}
+.button__text:active {
+  color: #601313;
 }
 
 .footer__logo {
