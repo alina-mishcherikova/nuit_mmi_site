@@ -136,6 +136,7 @@
 
 body {
   position: relative;
+  overflow-x: hidden;
   cursor: url("assets/Hand_opened.png") 16 16, auto;
 }
 
@@ -224,6 +225,7 @@ a:active {
   align-items: center;
   gap: 2rem;
   list-style: none;
+  font-size: 1.25rem;
   font-family: "Pixelify Sans";
 }
 
